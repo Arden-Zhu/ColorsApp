@@ -12,22 +12,8 @@ namespace ColorsApp
         public App()
         {
             // The root page of your application
-            var content = new ContentPage
-            {
-                Title = "ColorsApp",
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Hello World!"
-                        }
-                    }
-                }
-            };
 
-            MainPage = new NavigationPage(content);
+            MainPage = new ReflectedColorsPage();
         }
 
         protected override void OnStart()
